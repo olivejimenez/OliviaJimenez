@@ -1,0 +1,10 @@
+/*body{
+    background: gray;
+} */
+
+div{
+    background: blue;
+    border: orange;
+    border-width: thick;
+    border-style: dashed;
+}
