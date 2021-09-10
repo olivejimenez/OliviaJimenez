@@ -39,7 +39,6 @@
   <div class="container">
     <!-- Add a class with custom styling to this div 
       - connect a separate css file to this-->
-
     <h1 class="textblue">
       What is your favorite animal?
     </h1>
@@ -54,9 +53,35 @@
   </div>
   
       <!-- STEP 4: CREATE A PHOTO CAROUSEL HERE -->
-  
-      <!-- STEP 5: ADD Bootstrap styling to the table below so it has striped rows 
-           and a header row and add at least three more rows. Feel free to change the text.-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+      
+<!-- STEP 5: ADD Bootstrap styling to the table below so it has striped rows 
+      and a header row and add at least three more rows. Feel free to change the text.-->
   
 
 <table class="table table-striped">
