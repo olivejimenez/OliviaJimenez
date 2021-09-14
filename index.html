@@ -4,87 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olivia Jimenez's Website</title>
-</head>
-<body>
+    <title>Olivia's Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="css & bootstrap assessment.html">Olivia Jimenez</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
     
-    <a href="cssbootstrap.html">Back to CSS & Boostrap Assessment</a>
-    <h1>How well do you know Olivia?? </h1>
-    <h3>This is an assessment to test your knowledge on Olivia Jimenez!</h3>
-    <p>Side note: If you get all of the questions right you will be considered for Olivia's will.</p>
-
-    <form>
-        <h4>Have you ever met Olivia?</h4>
-        <label for="yes">Yes</label>
-        <input type="radio" id="yes" name="name_question" value="yes">
-        <label for="no">No</label>
-        <input type="radio" id="no" name="name_question" value="no">
-     <br>
-    <li>If you answered <strong>no</strong>...</li>
-    <ol><img src="shameonyou.jpg" alt=""></ol>
-        <ul>
-            <h3>stop taking this quiz immediately</h3>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="css & bootstrap assessment.html">Home</a>
+          </li>
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">HTML Assessment</a>
+        </li>
+      </ul>
         </ul>
-    <br>
-    <li>if you answered <strong>yes</strong>...</li>
-        <ol>
-        <li>please continue</li>
-        <li>good job you're doing great so far</li>
-        </ol>
-<!--beginning the zodiac questionnaire-->
-    <h4>What are Olivia's big three?</h4>
-    <p>Click on the image below to learn more about zodiacs</p>
-    <a href="https://www.astrology-zodiac-signs.com/">
-        <img src="zodiac.jpeg" width="300" height="300">
-    </a>
-        <p>Sun:</p>
-            <select name="sun.zodiacs">
-                <option value="Aries">Aries</option>
-                <option value="Taurus">Taurus</option>
-                <option value="Gemini">Gemini</option>
-                <option value="Cancer">Cancer</option>
-                <option value="Leo">Leo</option>
-                <option value="Virgo">Virgo</option>
-                <option value="Libra">Libra</option>
-                <option value="Sagittarius">Sagittarius</option>
-                <option value="Capricorn">Capricorn</option>
-                <option value="Aquarius">Aquarius</option>
-                <option value="Pisces">Pisces</option>
-            </select>
-        <p>Moon:</p>
-            <select name="moon.zodiacs">
-                <option value="Aries">Aries</option>
-                <option value="Taurus">Taurus</option>
-                <option value="Gemini">Gemini</option>
-                <option value="Cancer">Cancer</option>
-                <option value="Leo">Leo</option>
-                <option value="Virgo">Virgo</option>
-                <option value="Libra">Libra</option>
-                <option value="Sagittarius">Sagittarius</option>
-                <option value="Capricorn">Capricorn</option>
-                <option value="Aquarius">Aquarius</option>
-                <option value="Pisces">Pisces</option>
-            </select>
+      </div>
+    </div>
+  </nav>
 
-        <p>Ascendant:</p>
-            <select name="ascendant.zodiacs">
-                <option value="Aries">Aries</option>
-                <option value="Taurus">Taurus</option>
-                <option value="Gemini">Gemini</option>
-                <option value="Cancer">Cancer</option>
-                <option value="Leo">Leo</option>
-                <option value="Virgo">Virgo</option>
-                <option value="Libra">Libra</option>
-                <option value="Sagittarius">Sagittarius</option>
-                <option value="Capricorn">Capricorn</option>
-                <option value="Aquarius">Aquarius</option>
-                <option value="Pisces">Pisces</option>
-            </select>
-        <p>If you know anything about zodiacs, which signs do I give off and why?</p>
-        <p>*optional</p>
-        <textarea value="optional" cols="30" rows="10"></textarea>
-        <br>
-        <input type="Submit" value="Submit">
-    </form>
+  <div class="container">
+    <!-- Add a class with custom styling to this div 
+      - connect a separate css file to this-->
+    <h1 class="textblue text-center">
+      Sea Animals
+    </h1>
+  </div>
+  
+  <div class="container">
+    <!-- Add the same class as before to apply the same styling to this div.
+      ALSO add an id to this div to apply something unique. -->
+    <h4 class="textblue" id="fish">
+        What is your favorite sea animal?
+    </h4>
+  </div>
+  
+      <!-- STEP 4: CREATE A PHOTO CAROUSEL HERE -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.aquariumofpacific.org/images/made_new/images-uploads-clownfish_600_q85.jpg" class="d-block w-80" alt="..." width="600" height="auto">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.treehugger.com/thmb/kO2LTbjwBBwZcmsgb7CWpImPZo8=/1883x1412/smart/filters:no_upscale()/GettyImages-1159240457-79e9779a466c4b6e82d188384c34142b.jpg" class="d-block w-80" alt="..." width="600" height="auto">
+      </div>
+      <div class="carousel-item">
+        <img src="https://d.newsweek.com/en/full/1837953/dolphin.jpg?w=1600&h=1200&q=88&f=7815dd2a1bf746d6bd01b230b93818ac" class="d-block w-80" alt="..." width="600" height="auto">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+      
+<!-- STEP 5: ADD Bootstrap styling to the table below so it has striped rows 
+      and a header row and add at least three more rows. Feel free to change the text.-->
+  
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Person's Name</th>
+      <th scope="col">Their Favorite Sea Animal</th>
+      <th scope="col">Fish or Marine Mammal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Ethan</th>
+        <td>Killer Whale</td>
+        <td>Mammal</td>
+    </tr>
+    <tr>
+      <th scope="row">Kiyomi</th>
+        <td>Seahorse</td>
+        <td>Fish</td>
+    </tr>
+    <tr>
+      <th scope="row">Amber</th>
+        <td>Sea Cucumber</td>
+        <td>Fish</td>
+    </tr>
+    <tr>
+      <th scope="row">Steve</th>
+        <td>Dolphin</td>
+        <td>Mammal</td>
+    </tr>
+    <tr>
+      <th scope="row">Noe</th>
+        <td>Cockroach</td>
+        <td>Neither</td>
+    </tr>
+    <tr>
+      <th scope="row">Lauren</th>
+        <td>Octopus</td>
+        <td>Fish</td>
+    </tr>
+  </tbody>
+</table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
 </body>
 </html>
