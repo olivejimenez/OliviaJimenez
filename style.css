@@ -1,6 +1,27 @@
-.myred{
-    color:red;
+.textblue{
+    color:darkblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #fish{
-    background-color:blue;
+    text-align: center;
+    text-decoration: underline;
+    font-family: fantasy;
+}
+.container{
+    background-color:lightblue;
+    text-align: center;
+}
+
+body{
+    background-color:rgb(166, 190, 197);
+}
+thead{
+    background-color:lightblue;
+    color:darkblue;
+    border: darkblue;
+    border-width: 3px;
+    border-style: solid;
+}
+img{
+    margin-left: 425px;
 }
