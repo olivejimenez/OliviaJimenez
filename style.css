@@ -1,27 +1,39 @@
-.textblue{
-    color:darkblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#fish{
-    text-align: center;
-    text-decoration: underline;
-    font-family: fantasy;
-}
-.container{
-    background-color:lightblue;
-    text-align: center;
+body{
+    background-color:rgba(131, 68, 32, 0.438);
 }
 
-body{
-    background-color:rgb(166, 190, 197);
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
 }
-thead{
-    background-color:lightblue;
-    color:darkblue;
-    border: darkblue;
-    border-width: 3px;
-    border-style: solid;
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
 }
-img{
-    margin-left: 425px;
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
 }
